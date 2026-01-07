@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Link na Bio • Seu Nome</title>
+  <meta name="description" content="Links oficiais — portfólio, projetos e contato." />
+  <meta name="theme-color" content="#04150f" />
+
+  <!-- Fonte (troque se quiser) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <main class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <span class="dot"></span>
+        <div>
+          <b id="brandName">Seu Nome</b>
+          <small id="brandTag">link na bio</small>
+        </div>
+      </div>
+
+      <div class="lang" aria-label="Idioma">
+        <button class="chip active" id="ptBtn" title="Português" aria-pressed="true">🇧🇷</button>
+        <button class="chip" id="enBtn" title="English" aria-pressed="false">🇺🇸</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="glow"></div>
+
+      <div class="profile">
+        <div class="avatar" id="avatar">EA</div>
+        <div class="who">
+          <h1 id="name">Seu Nome</h1>
+          <p id="headline">Front-End Developer • UI/UX • Interfaces premium</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" id="primaryCta" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M21 3l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 5H7a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="primaryLabel">Ver Portfólio</span>
+        </a>
+
+        <button class="btn" id="copyEmail" type="button">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" />
+            <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="copyLabel">Copiar e-mail</span>
+        </button>
+
+        <a class="btn" id="whatsBtn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M20 11.5a8.5 8.5 0 0 1-12.4 7.6L4 20l1-3.3A8.5 8.5 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M9 9.5c.5 3 3 5.5 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="whatsLabel">WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="title" id="linksTitle">Links</div>
+      <div class="cards" id="links"></div>
+    </section>
+
+    <section class="section">
+      <div class="title" id="projectsTitle">Projetos</div>
+      <div class="cards" id="projects"></div>
+    </section>
+
+    <footer class="footer" id="footer">
+      Feito em HTML/CSS/JS • Visual premium • Mobile-first
+    </footer>
+  </main>
+
+  <div class="toast" id="toast">Copiado!</div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
